@@ -13,6 +13,7 @@
     "allowUnreachableCode": false,
     "downlevelIteration": true,
     "isolatedModules": true,
-    "importHelpers": true
+    "importHelpers": true,
+    "incremental": true
   }
 }
