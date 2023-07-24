@@ -8,7 +8,8 @@
   },
   "files": [
     "readme.md",
-    "tsconfig.json"
+    "tsconfig.json",
+    "tsconfig.react.json"
   ],
   "exports": {
     ".": "./tsconfig.json",
