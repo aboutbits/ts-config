@@ -1,0 +1,43 @@
+{
+  "name": "@aboutbits/ts-config",
+  "version": "0.0.1",
+  "description": "AboutBits' TypeScript configs",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "readme.md",
+    "tsconfig.json"
+  ],
+  "exports": {
+    ".": "./tsconfig.json",
+    "./react": "./tsconfig.react.json"
+  },
+  "engines": {
+    "npm": ">=8",
+    "node": ">=16"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboutbits/ts-config"
+  },
+  "keywords": [
+    "ts-config",
+    "tsconfig",
+    "typescript"
+  ],
+  "author": "AboutBits",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aboutbits/ts-config/issues"
+  },
+  "homepage": "https://github.com/aboutbits/ts-config",
+  "prettier": "@aboutbits/prettier-config",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
