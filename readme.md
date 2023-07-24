@@ -13,11 +13,23 @@ Install the package, assuming that you have TypeScript already installed:
 npm i -D @aboutbits/ts-config
 ```
 
-Edit your `tsconfig.json`:
+### For TypeScript without React
+
+`tsconfig.json`
 
 ```json
 {
   "extends": "@aboutbits/ts-config"
+}
+```
+
+### For TypeScript with React
+
+`tsconfig.json`
+
+```json
+{
+  "extends": "@aboutbits/ts-config/react"
 }
 ```
 
