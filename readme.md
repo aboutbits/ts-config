@@ -3,7 +3,7 @@
 [![npm package](https://badge.fury.io/js/%40aboutbits%2Fts-config.svg)](https://badge.fury.io/js/%40aboutbits%2Fts-config)
 [![license](https://img.shields.io/github/license/aboutbits/ts-config)](https://github.com/aboutbits/ts-config/blob/main/license.md)
 
-AboutBit's [ESLint](https://eslint.org/) config presets
+AboutBit's [TypeScript](https://www.typescriptlang.org/) config presets
 
 ## Usage
 
