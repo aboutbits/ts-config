@@ -16,8 +16,8 @@
     "./react": "./tsconfig.react.json"
   },
   "engines": {
-    "npm": "^8",
-    "node": "^16"
+    "npm": ">=8",
+    "node": ">=16"
   },
   "scripts": {
     "postversion": "git push && git push --tags"
