@@ -22,12 +22,16 @@ jobs:
         with:
           token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - uses: aboutbits/github-actions-base/git-setup@v2
+      - name: Configure npm for GitHub Packages
+        run: |
+          echo "@aboutbits:registry=https://npm.pkg.github.com" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> ~/.npmrc
       - uses: aboutbits/github-actions-node/build-and-publish-package@v3
         id: package
         with:
           node-version: ${{ env.NODE_VERSION }}
-          registry-url: 'https://registry.npmjs.org'
-          registry-token: ${{ secrets.NPM_TOKEN }}
+          registry-url: 'https://npm.pkg.github.com'
+          registry-token: ${{ secrets.GITHUB_TOKEN }}
           increment: ${{ github.event.inputs.increment }}
           preid: ${{ github.event.inputs.preid }}
       - uses: aboutbits/github-actions-base/github-create-release@v2
