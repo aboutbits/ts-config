@@ -22,6 +22,8 @@ jobs:
         with:
           token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - uses: aboutbits/github-actions-base/git-setup@v2
+      - uses: aboutbits/github-actions-node/configure-github-npm-registry-access@v3
+      - uses: aboutbits/github-actions-node/configure-github-npm-registry-organization@v3
       - name: Configure npm for GitHub Packages
         run: |
           echo "@aboutbits:registry=https://npm.pkg.github.com" >> ~/.npmrc
