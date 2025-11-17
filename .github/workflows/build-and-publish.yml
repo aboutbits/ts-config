@@ -35,5 +35,8 @@ jobs:
       - uses: aboutbits/github-actions-base/github-create-release@v2
         with:
           tag-name: 'v${{ steps.package.outputs.version }}'
-          release-description: 'npm install @${{ github.repository }}@^${{ steps.package.outputs.version }}'
+          release-description: |
+            \\`\\`\\`bash
+            npm install @${{ github.repository }}@^${{ steps.package.outputs.version }}
+            \\`\\`\\`
           release-notes-generation: 'true'
