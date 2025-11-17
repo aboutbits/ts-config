@@ -37,6 +37,6 @@ jobs:
           tag-name: 'v${{ steps.package.outputs.version }}'
           release-description: |
             ```bash
-            npm install @${{ GITHUB_REPOSITORY }}@^${{ steps.package.outputs.version }}
+            npm install @${{ github.repository }}@^${{ steps.package.outputs.version }}
             ```
           release-notes-generation: 'true'
