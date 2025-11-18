@@ -36,7 +36,7 @@ jobs:
         with:
           tag-name: 'v${{ steps.package.outputs.version }}'
           release-description: |
-            `\``bash
+            ```bash
             npm install ${{ steps.package.outputs.name }}@^${{ steps.package.outputs.version }}
-            `\``
+            ```
           release-notes-generation: 'true'
