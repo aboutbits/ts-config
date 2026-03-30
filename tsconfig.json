@@ -11,7 +11,6 @@
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
     "allowUnreachableCode": false,
-    "downlevelIteration": true,
     "isolatedModules": true,
     "importHelpers": true,
     "incremental": true
