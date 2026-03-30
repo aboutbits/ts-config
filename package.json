@@ -40,6 +40,6 @@
     "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": ">=5"
   }
 }
